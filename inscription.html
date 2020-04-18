@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- Type de document -->
+
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Emoji Encyclopedia</title>
+		<link href="css/inscription.css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- /Header avec le logo cliquable et menu de navigation -->
+		<header>
+			<div id="divHeaderLogo">
+				<a href="index.html"><img src="img/logo.png" alt="logo du site" id="logoSite"></a>
+				<div id="ParaLogo">Emoji</div>
+				<div id="ParaLogo2">Encyclopedia</div>
+			</div>
+
+			<div id="divHeaderLogin">
+				<form>
+					<div class="FormLogin">
+						<img src="img/usericone.png" alt="icone utilisateur" class="ImgLogin">
+						<div class="ParaLogin">Identifiant</div>
+						<input type="text"/> 
+					</div>
+					<div class="FormLogin">
+						<img src="img/cadenas.png" alt="image de cadenas" class="ImgLogin">
+						<div class="ParaLogin">Mot de passe</div> 
+						<input type="password"/>
+					</div>
+					<input type="submit" value="Se Connecter" id="submit"/>
+					<a href="inscription.html" id="LiensFormLogin">Vous n'êtes pas encore inscrit ? Cliquez ici</a>
+				</form>
+			</div>
+
+			<div id="divHeaderNav"> <!-- Div qui contient le menu de navigation -->
+				<!-- Menu de navigation -->
+				<nav id="navcentre">
+					<a href="index.html" class="liensNav"> Accueil </a>
+					<a href="article.html"> Articles </a> 
+					<a href="galerie.html"> Galerie </a>
+					<a href="contact.html" id="lienNav"> Contact </a>
+				</nav>	
+			</div>		
+
+		</header>
+		
+		<main>
+			<section>
+				<h1> Rejoins notre site </h1>
+				<div id = "inscription">
+					<form>
+						<label> Nom : </label><input type="text" size="32" maxlength="30" class="inputSansRadio">
+						<label> Prénom : </label><input type="text" size="32" maxlength="30" class="inputSansRadio">
+						<label> Sexe : </label>
+						<label> Homme </label><input type="radio" name="sexe" value="Homme">
+						<label> Femme </label><input type="radio" name="sexe" value="Femme">
+						<label> Autre </label><input type="radio" name="sexe" value="Autre">
+							
+						<label id="dateNaiss"> Date de naissance : </label><input type="date" class="inputSansRadio">
+						<label> E-mail : </label><input type="email" size="32" maxlength="30" placeholder="mail@cybermail.com" class="inputSansRadio">
+						<label> Numéro de téléphone : </label><input type="tel" size="32" maxlength="30" class="inputSansRadio">
+
+						<label> Nom d'utilisateur : </label><input type="text" size="32" maxlength="30" class="inputSansRadio">
+						<label> Mot de passe : </label><input type="password" placeholder="Veuillez insérer votre mot de passe" size="32" maxlength="30" class="inputSansRadio">
+						<label>	Confirmation de votre mot de passe : </label><input type="password" placeholder="Confirmez votre mot de passe" size="32" maxlength="30" class="inputSansRadio">
+
+						<input id="button" type="submit" value="Confirmation de l'inscription"/>
+					</form>
+				</div>
+				<img src="./img/join.png" alt="Cybercriminalité"/>		
+			</section>
+		<!-- /Footer de la page -->
+			<footer>
+
+				<div id="divFootInfo">
+					<p class="Titre">S'inscrire</p><br><p class="SousTitre">à la newsletters</p>
+					<input type="text" placeholder="Veuillez insérer votre email" size="22" maxlength="20" id="divFootText">
+					<a id="abonner" href="">S'abonner</a>
+					
+				</div>
+
+				<div id="divFootReseauxS"> <!-- Div contenant les réseaux sociaux du site -->
+					<p class="Titre">Nous Suivre</p><br><p class="SousTitre">Sur les réseaux sociaux</p>
+					<div id="divFootLiens">
+						<a href=""><img src="img/fb.png" alt="fb"></a>
+						<a href=""><img src="img/twitter.png" alt="twitter"></a>
+						<a href=""><img src="img/insta.png" alt="insta"></a>
+					</div>
+				</div>
+
+				<div id="divFootTel">
+					<p class="Titre">Email</p><br><p class="SousTitre">Contactez-nous</p>
+					<p>Tel: +(33) 6 XX XX XX XX </p> <!-- Numéro tel du groupe -->
+					<p>Courriel: emojienclyclopedia@gmail.com </p>
+				</div>
+
+			<!-- Copyright -->
+				<p id="pCopyright"> © 2019 - 2020 Copyright - Emojis, tous droits réservés </p>
+			
+			</footer>	
+		</main>
+	</body>
+</html>
